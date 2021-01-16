@@ -11,6 +11,6 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties
 public class UIProperties {
 
-    private final Map<String, String> uiProperties = new HashMap<>();
+    private final Map<String, String> uiProperty = new HashMap<>();
 
 }
