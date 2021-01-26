@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.PostConstruct;
+import java.io.ObjectOutputStream;
 import java.util.Base64;
 import java.util.Map;
 
