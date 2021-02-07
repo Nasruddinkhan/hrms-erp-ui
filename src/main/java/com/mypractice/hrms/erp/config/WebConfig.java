@@ -12,7 +12,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 public class WebConfig implements WebMvcConfigurer {
 
     private static final String CLASSPATH_DIST = "classpath:/dist/";
-
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         addMapping(registry, "/dist/**", CLASSPATH_DIST);

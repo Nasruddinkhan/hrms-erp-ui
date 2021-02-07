@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.PostConstruct;
+import java.io.ObjectOutputStream;
 import java.util.Base64;
 import java.util.Map;
 
@@ -26,7 +27,7 @@ public class HomeController {
 
     @PostConstruct
     public void init() {
-        Map<String, String> properties = uiProperties.getUiProperties();
+        Map<String, String> properties = uiProperties.getUiProperty();
         String stringifyProperties = new JSONObject(properties).toJSONString();
         encodedProperties = new String(Base64.getEncoder().encode(stringifyProperties.getBytes()));
     }

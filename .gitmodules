@@ -1,0 +1,3 @@
+[submodule "hrms-erp-ui/common-ui-app"]
+	path = hrms-erp-ui/common-ui-app
+	url = https://github.com/Nasruddinkhan/common-ui-app.git
