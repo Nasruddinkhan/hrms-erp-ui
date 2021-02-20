@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from 'src/app/core/bootstrap/settings.service';
 
 @Component({
   selector: 'app-admin-layout',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminLayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor( private settings: SettingsService) { }
 
   ngOnInit(): void {
   }

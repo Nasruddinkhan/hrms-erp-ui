@@ -7,20 +7,17 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { SideMenuComponent } from './layout/side-menu/side-menu.component';
 import { CommonUiAppModule } from 'common-ui-app/src/public-api';
 import { LoginComponent } from './views/login/login.component';
-import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
-import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './shared';
 import { ToastrModule } from 'ngx-toastr';
+import { CoreModule } from './core/core.module';
+import { AdminLayoutModule } from './layout/admin-layout.module';
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     SideMenuComponent,
-    LoginComponent,
-    AuthLayoutComponent,
-    AdminLayoutComponent
-   
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +27,8 @@ import { ToastrModule } from 'ngx-toastr';
     CommonUiAppModule,
     ReactiveFormsModule,
     ToastrModule.forRoot(),
+    CoreModule,
+    AdminLayoutModule
     ],
   providers: [],
   bootstrap: [AppComponent]

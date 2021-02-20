@@ -9,9 +9,9 @@ import { LoginComponent } from './views/login/login.component';
 const routes: Routes = [
   {
     path: '',
-    component: AdminLayoutComponent,
     canActivate: [AuthGuard],
     canActivateChild: [AuthGuard],
+    component:AdminLayoutComponent,
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       {
