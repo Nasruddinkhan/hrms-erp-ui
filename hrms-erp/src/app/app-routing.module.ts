@@ -18,7 +18,12 @@ const routes: Routes = [
         path: 'dashboard',
         component: DashboardComponent,
         data: { title: 'Dashboard', titleI18n: 'dashboard' },
-      }
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('./views/profile/profile/profile.module').then(m => m.ProfileModule),
+        data: { title: 'Profile', titleI18n: 'profile' },
+      },
     ],
   },
   {

@@ -12,6 +12,7 @@ import { SharedModule } from './shared';
 import { ToastrModule } from 'ngx-toastr';
 import { CoreModule } from './core/core.module';
 import { AdminLayoutModule } from './layout/admin-layout.module';
+import { ProfileModule } from './views/profile/profile/profile.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { AdminLayoutModule } from './layout/admin-layout.module';
     ReactiveFormsModule,
     ToastrModule.forRoot(),
     CoreModule,
-    AdminLayoutModule
+    AdminLayoutModule,
+    ProfileModule
     ],
   providers: [],
   bootstrap: [AppComponent]

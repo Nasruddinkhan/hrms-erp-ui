@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       id: uid,
       name: 'Nasruddin',
       email: 'nasruddinkhan44@gmail.com',
-      avatar: './assets/images/avatar.jpg',
+      avatar: './assets/images/photo.jpeg',
     });
     this.token.set({ token, uid, username });
       let url = this.token.referrer!.url || '/';

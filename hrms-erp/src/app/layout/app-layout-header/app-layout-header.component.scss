@@ -14,3 +14,37 @@
 .admin-layout-header-white .admin-layout-toolbar, .admin-layout-header-white .admin-layout-topmenu {
     background-color: white;
 }
+.admin-layout-toolbar-button.admin-layout-avatar-button {
+    display: block;
+    padding: 0 4px;
+    font-size: 0;
+}
+.admin-layout-toolbar-button {
+    &.mat-button,
+    &.mat-icon-button {
+      margin: 0 4px;
+    }
+  
+    &.mat-button {
+      min-width: unset;
+      line-height: 40px;
+      border-radius: 999px;
+    }
+  
+    &.admin-layout-avatar-button {
+      display: block;
+      padding: 0 4px;
+      font-size: 0;
+  
+      .admin-layout-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+      }
+  
+      .matero-username {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+    }
+  }
