@@ -13,6 +13,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { CoreModule } from './core/core.module';
 import { AdminLayoutModule } from './layout/admin-layout.module';
 import { ProfileModule } from './views/profile/profile/profile.module';
+import { appInitializerProviders } from './layout/appInitializerProviders';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +28,14 @@ import { ProfileModule } from './views/profile/profile/profile.module';
     BrowserAnimationsModule,
     SharedModule,
     CommonUiAppModule,
+    HttpClientModule,
     ReactiveFormsModule,
     ToastrModule.forRoot(),
     CoreModule,
     AdminLayoutModule,
     ProfileModule
     ],
-  providers: [],
+  providers: [ appInitializerProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
