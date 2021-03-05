@@ -1,4 +1,22 @@
-<div class="admin-layout-container admin-layout-header-white">
-    <app-app-layout-header></app-app-layout-header>
- <router-outlet></router-outlet>
+<div class="admin-layout-container ">
+ <mat-sidenav-container autosize autoFocus>
+
+   <!--  <mat-sidenav #sidenavNotice position="end" mode="over">
+      <app-sidebar-notice></app-sidebar-notice>
+    </mat-sidenav> -->
+
+    <mat-sidenav-content #content >
+     <!--  <app-header [showToggle]="false"
+                  [showBranding]="true"
+                  (toggleSidenavNotice)="sidenavNotice.toggle()">
+      </app-header> -->
+      <app-app-layout-header></app-app-layout-header>
+
+
+    <app-top-menu></app-top-menu>
+      <div >
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>

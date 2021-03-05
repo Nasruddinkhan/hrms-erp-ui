@@ -7,6 +7,8 @@ import { SharedModule } from '../shared';
 import { UserComponent } from './app-layout-header/widgets/user/user.component';
 import { NotificationComponent } from './app-layout-header/widgets/notification/notification.component';
 import { TranslateComponent } from './app-layout-header/widgets/translate/translate.component';
+import { TopMenuComponent } from './top-menu/top-menu.component';
+import { TopMenuPanelComponent } from './top-menu/top-menu-panel/top-menu-panel.component';
 
 
 
@@ -16,7 +18,9 @@ import { TranslateComponent } from './app-layout-header/widgets/translate/transl
     AppLayoutHeaderComponent,
     UserComponent,
     NotificationComponent,
-    TranslateComponent  ],
+    TranslateComponent,
+    TopMenuComponent,
+    TopMenuPanelComponent  ],
   imports: [
    SharedModule
   ]

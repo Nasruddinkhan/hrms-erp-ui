@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 col-lg-2 col-xs-2 col-md-2">
+            <mat-card>
+                <div class="text-center">
+                    <img class="usrimg" alt="No Image" src="./assets/images/photo.jpeg"  >
+                </div>
+            </mat-card>
+            <mat-card>
+            <mat-nav-list >
+
+                <mat-divider inset></mat-divider>
+                <a mat-list-item routerLink="/profile/about">
+                    <mat-icon class="icon-18 m-r-8">storage</mat-icon> About
+                </a>
+                <mat-divider inset></mat-divider>
+                <a mat-list-item routerLink="/profile/userprofile">
+                    <mat-icon class="icon-18 m-r-8">account_circle</mat-icon> Profile
+                </a>
+                <mat-divider inset></mat-divider>
+                <a mat-list-item routerLink="/profile/job">
+                    <mat-icon class="icon-18 m-r-8">meeting_room</mat-icon> Job
+                </a>
+                <mat-divider inset></mat-divider>
+                <a mat-list-item routerLink="/profile/documents">
+                    <mat-icon class="icon-18 m-r-8">attach_file</mat-icon> Documents
+                </a>
+                <mat-divider inset></mat-divider>
+                <a mat-list-item routerLink="/profile/assets">
+                    <mat-icon class="icon-18 m-r-8">settings</mat-icon> Assets
+                </a>
+                <mat-divider inset></mat-divider>
+                <a mat-list-item routerLink="/profile/resume-builder">
+                    <mat-icon class="icon-18 m-r-8">storage</mat-icon> Resume Builder
+                </a>
+            </mat-nav-list>
+            </mat-card>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 ">
+
+            <router-outlet></router-outlet>
+
+        </div>
+
+    </div>
+</div>

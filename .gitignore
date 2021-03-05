@@ -45,7 +45,8 @@ testem.log
 
 # Generated files
 .idea/**/contentModel.xml
-
+.mvn/**/maven-wrapper.jar
+.mvn
 # Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids

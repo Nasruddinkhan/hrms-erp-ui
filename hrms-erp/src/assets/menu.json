@@ -1,0 +1,236 @@
+{
+  "menu": [
+    {
+      "route": "dashboard",
+      "name": "dashboard",
+      "type": "link",
+      "icon": "dashboard",
+      "badge": {
+        "color": "red-500",
+        "value": "5"
+      }
+    },
+    
+    
+    {
+      "route": "profile",
+      "name": "Profile",
+      "type": "sub",
+      "icon": "person",
+      "children": [
+        {
+          "route": "overview",
+          "name": "Overview",
+          "type": "link"
+        },
+        {
+          "route": "settings",
+          "name": "Settings",
+          "type": "link"
+        }
+      ]
+    },
+ 
+    {
+      "route": "inbox",
+      "name": "Inbox",
+      "type": "link",
+      "icon": "inbox"
+    },
+    {
+      "route": "my-team",
+      "name": "My Team",
+      "type": "link",
+      "icon": "people_outline"
+    },
+    {
+      "route": "me",
+      "name": "Me",    
+      "type": "sub",
+      "icon": "sentiment_dissatisfied",
+      "children": [
+        {
+          "route": "leave",
+          "name": "Leave",
+          "type": "link"
+        },
+        {
+          "route": "attendance",
+          "name": "Attendance",
+          "type": "link"
+        },
+        {
+          "route": "",
+          "name": "Timesheet",
+          "type": "sub",
+          "children":[
+            {
+              "route": "timesheet",
+              "name": "All Timesheet",
+              "type": "link"
+            },
+            {
+              "route": "pastdue",
+              "name": "Past Due",
+              "type": "link"
+            },   
+            {
+              "route": "rejecttimesheet",
+              "name": "Rejected Timesheet",
+              "type": "link"
+            },
+            {
+              "route": "projecttime",
+              "name": "Project Time",
+              "type": "link"
+            },
+            {
+              "route": "timesummary",
+              "name": "Time Summary",
+              "type": "link"
+            }
+           
+        ]
+        },
+        {
+          "route": "",
+          "name": "Performance",
+          "type": "sub",
+          "children":[
+            {
+              "route": "review",
+              "name": "Review",
+              "type": "link"
+            },
+            {
+              "route": "goal", 
+              "name": "Goal",
+              "type": "link"
+            },
+            {
+              "route": "compentencies",
+              "name": "Competencies & Core values",
+              "type": "link"
+            },
+            {
+              "route": "continuous-feedback",
+              "name": "Continuous Feedback",
+              "type": "link"
+            },
+            {
+              "route": "meeting",
+              "name": "1:1 Meetings",
+              "type": "link"
+            }
+                
+        ]
+        },
+        {
+          "route": "travalexpense",
+          "name": "Travel & Expence",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "route": "finance",
+      "name": "My Finances",
+      "type": "sub",
+      "icon": "payment",
+      "children": [
+        {
+          "route": "summary",
+          "name": "Summary",
+          "type": "link"
+        },
+        {
+          "route": "",
+          "name": "My Pay",
+          "type": "sub",
+          "children": [
+            {
+              "route": "mysalary",
+              "name": "My Salary",
+              "type": "link"
+            },
+            {
+              "route": "payslip",
+              "name": "PaySlip",
+              "type": "link"
+            },
+            {
+              "route": "income-tax",
+              "name": "Income Tax",
+              "type": "link"
+            },
+            {
+              "route": "component-claim",
+              "name": "Component Claim",
+              "type": "link"
+            }
+          ]   
+        }
+      ]
+    },
+    {
+      "route": "org",
+      "name": "Organization",
+      "type": "sub",
+      "icon": "view_list",
+      "children": [
+         {
+          "route": "",
+          "name": "Employee",
+          "type": "sub",
+          "children": [
+            {
+              "route": "directory",
+              "name": "Employee Directory",
+              "type": "link"
+            },
+            {
+              "route": "orgtree",
+              "name": "Organization Tree",
+              "type": "link"
+            }
+          ]   
+        } ,
+        {
+          "route": "",
+          "name": "Engage",
+          "type": "sub",
+          "children": [
+            {
+              "route": "announcement",
+              "name": "Announcement",
+              "type": "link"
+            }
+            ,
+            {
+              "route": "articles",
+              "name": "Articles",
+              "type": "link"
+            },
+            {
+              "route": "polls",
+              "name": "Polls",
+              "type": "link"
+            }
+          ]   
+        },
+        {
+          "route": "",
+          "name": "Documents",
+          "type": "sub",
+          "children": [
+            {
+              "route": "orgdocuments",
+              "name": "Organization Documents",
+              "type": "link"
+            }
+          ]   
+        } 
+      ]   
+    }
+  ]
+}

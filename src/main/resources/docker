@@ -1,0 +1,4 @@
+docker build -f Dockerfile -t hrms-erp-ui
+docker run -p 8082:8082 hrms-erp-ui
+docker image push nasruddinkhan/hrms-erp-ui:5000/myadmin/rhel-httpd:latest
+docker run -p 8086:8082 hrms-erp-ui

@@ -1,0 +1,79 @@
+
+<mat-accordion multi>
+    <mat-expansion-panel style="width: 100%;"  (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+       
+            <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <mat-icon>account_circle</mat-icon>
+                        <span>Profile Details</span>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        {{panelOpenState ? 'View Profile Details' : 'Open Profile Details'}}
+                    </mat-panel-description>
+            </mat-expansion-panel-header>
+      
+            <p>I'm cvxcvxzcvdd because I am open</p>
+
+                <div style="float: right;">
+                    <a mat-mini-fab 
+                    (click)="openPrimaryDetails()"
+                      aria-label="Activate mini floating action style google search link">
+                      <mat-icon>add</mat-icon>
+                    </a>
+                  </div>
+            
+      
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>account_circle</mat-icon>
+                <span>Contact Details</span>
+            </mat-panel-title>
+            <mat-panel-description>
+                {{panelOpenState ? 'View Contact Details' : 'Open Contact Details'}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+        <div style="float: right;">
+            <a mat-mini-fab 
+            (click)="openContactDetails()"
+              aria-label="Activate mini floating action style google search link">
+              <mat-icon>add</mat-icon>
+            </a>
+          </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>account_circle</mat-icon>
+                <span>Address Details</span>
+            </mat-panel-title>
+            <mat-panel-description>
+                {{panelOpenState ? 'View Address Details' : 'Open Address Details'}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+        <div style="float: right;">
+            <a mat-mini-fab 
+            (click)="openAddreessDetails()"
+              aria-label="Activate mini floating action style google search link">
+              <mat-icon>add</mat-icon>
+            </a>
+          </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>account_circle</mat-icon>
+                <span class="ml-1">Skill Details</span>
+            </mat-panel-title>
+            <mat-panel-description>
+
+                {{panelOpenState ? 'View Skill Details' : 'Open Skill Details'}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+    </mat-expansion-panel>
+
+</mat-accordion>

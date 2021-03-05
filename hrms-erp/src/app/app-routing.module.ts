@@ -18,7 +18,26 @@ const routes: Routes = [
         path: 'dashboard',
         component: DashboardComponent,
         data: { title: 'Dashboard', titleI18n: 'dashboard' },
-      }
+      },
+      {
+        path: 'inbox',
+        loadChildren: () => import('./views/inbox/inbox.module').then(m => m.InboxModule),
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('./views/profile/profile/profile.module').then(m => m.ProfileModule),
+        data: { title: 'Profile', titleI18n: 'profile' },
+      },
+      {
+        path: 'me',
+        loadChildren: () => import('./views/me/me.module').then(m => m.MeModule),
+        data: { title: 'Profile', titleI18n: 'profile' },
+      },
+      {
+        path: 'my-team',
+        loadChildren: () => import('./views/my-team/my-team.module').then(m => m.MyTeamModule)
+      },
+      
     ],
   },
   {
@@ -33,7 +52,10 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    useHash: false,
+    relativeLinkResolution: 'legacy',
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
