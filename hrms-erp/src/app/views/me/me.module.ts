@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LeaveModule } from './leave/leave.module';
 import { LeaveComponent } from './leave/leave.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { AllTimeSheetComponent } from './timesheet/all-time-sheet/all-time-sheet.component';
@@ -14,14 +13,16 @@ import { CompentenciesCoreValueComponent } from './performence/compentencies-cor
 import { ContinuousFeedbackComponent } from './performence/continuous-feedback/continuous-feedback.component';
 import { OneToOneMeetingComponent } from './performence/one-to-one-meeting/one-to-one-meeting.component';
 import { TravelExpenseComponent } from './travel-expense/travel-expense.component';
+import { SharedModule } from 'src/app/shared';
+import { MeRoutingModule } from './me-routing.modute';
 
 
 
 @NgModule({
   declarations: [LeaveComponent, AttendanceComponent, AllTimeSheetComponent, PastDueComponent, RejectTimeSheetComponent, ProjectTimeComponent, TimeSummaryComponent, ReviewComponent, GoalComponent, CompentenciesCoreValueComponent, ContinuousFeedbackComponent, OneToOneMeetingComponent, TravelExpenseComponent],
   imports: [
-    CommonModule,
-    LeaveModule
+    SharedModule,
+    MeRoutingModule
   ]
 })
 export class MeModule { }

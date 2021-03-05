@@ -50,7 +50,6 @@ export class MenuService{
   
     // Delete empty values and rebuild route
     buildRoute(routeArr: string[]): string {
-      console.log(routeArr);
       let route = '';
       routeArr.forEach(item => {
         if (item && item.trim()) {

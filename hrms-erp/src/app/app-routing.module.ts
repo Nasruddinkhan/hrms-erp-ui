@@ -28,6 +28,16 @@ const routes: Routes = [
         loadChildren: () => import('./views/profile/profile/profile.module').then(m => m.ProfileModule),
         data: { title: 'Profile', titleI18n: 'profile' },
       },
+      {
+        path: 'me',
+        loadChildren: () => import('./views/me/me.module').then(m => m.MeModule),
+        data: { title: 'Profile', titleI18n: 'profile' },
+      },
+      {
+        path: 'my-team',
+        loadChildren: () => import('./views/my-team/my-team.module').then(m => m.MyTeamModule)
+      },
+      
     ],
   },
   {

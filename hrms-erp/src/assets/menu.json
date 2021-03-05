@@ -103,7 +103,7 @@
               "type": "link"
             },
             {
-              "route": "goal",
+              "route": "goal", 
               "name": "Goal",
               "type": "link"
             },

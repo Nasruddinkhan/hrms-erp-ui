@@ -20,10 +20,10 @@ import { TopmenuState } from '../top-menu.component';
   styleUrls: ['./top-menu-panel.component.scss']
 })
 export class TopMenuPanelComponent implements OnInit, OnDestroy {
-  @ViewChild('menu', { static: true }) menu?: MatMenu;
+  @ViewChild('menu', { static: true }) menu!: MatMenu;
 
-  @Input() items: MenuChildrenItem[] = [];
-  @Input() parentRoute = [];
+  @Input() items: Array<MenuChildrenItem> | undefined;
+  @Input() parentRoute:string[] = []; ;
   @Input() level = 1;
   @Output() routeChange = new EventEmitter<any>();
 
@@ -35,7 +35,12 @@ export class TopMenuPanelComponent implements OnInit, OnDestroy {
 
   constructor(public menuSrv: MenuService, private router: Router) {}
 
+  ngAfterViewInit() {
+    
+    console.log("menu:", this.menu);
+  }
   ngOnInit() {
+    if(this.items)
     this.items.forEach(item => {
       this.menuStates.push({ active: this.checkRoute(item), route: item.route });
     });
