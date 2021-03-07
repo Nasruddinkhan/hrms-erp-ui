@@ -1,4 +1,6 @@
-.admin-layout-container {
+@import '~@angular/material/theming';
+
+.admin-layout-container, .admin-container {
   height: 100%;
  /*   background-color: #BBB;
     background-image:
@@ -24,11 +26,36 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+.admin-content {
+  position: relative;
+  padding: 16px;
+}
 
 
 .admin-layout-header-white {
   .admin-layout-toolbar,
   .admin-layout-topmenu {
     background-color: white;
+  }
+}
+.mat-drawer-container {
+  background-color: #fafafa !important;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.mat-drawer-backdrop .mat-drawer-shown {
+  background-color: hsl(0, 0%, 98%) !important;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.matero-sidenav {
+  position: absolute;
+  overflow-x: hidden;
+  transition: swift-ease-out(width); // Only set width property
+  height: 1000px;
+  @include mat-elevation(2);
+
+  &.mat-drawer-side {
+    border-width: 0;
   }
 }
