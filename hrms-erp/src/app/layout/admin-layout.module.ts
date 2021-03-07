@@ -9,6 +9,12 @@ import { NotificationComponent } from './app-layout-header/widgets/notification/
 import { TranslateComponent } from './app-layout-header/widgets/translate/translate.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { TopMenuPanelComponent } from './top-menu/top-menu-panel/top-menu-panel.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
+import { SideMenuDataComponent } from './side-menu/side-menu-data/side-menu-data.component';
+import { AccordionDirective } from './side-menu/side-menu-data/accordion.directive';
+import { AccordionItemDirective } from './side-menu/side-menu-data/accordionItem.directive';
+import { AccordionAnchorDirective } from './side-menu/side-menu-data/accordionanchor.directive';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -20,7 +26,13 @@ import { TopMenuPanelComponent } from './top-menu/top-menu-panel/top-menu-panel.
     NotificationComponent,
     TranslateComponent,
     TopMenuComponent,
-    TopMenuPanelComponent  ],
+    SideMenuComponent,
+    TopMenuPanelComponent,
+    AccordionDirective,
+    AccordionItemDirective,
+    AccordionAnchorDirective,
+    FooterComponent,
+    SideMenuDataComponent  ],
   imports: [
    SharedModule
   ]

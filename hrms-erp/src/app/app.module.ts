@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './layout/footer/footer.component';
-import { SideMenuComponent } from './layout/side-menu/side-menu.component';
 import { CommonUiAppModule } from 'common-ui-app/src/public-api';
 import { LoginComponent } from './views/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -18,8 +17,6 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
-    SideMenuComponent,
     LoginComponent
   ],
   imports: [
