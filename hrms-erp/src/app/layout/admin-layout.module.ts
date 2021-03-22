@@ -15,6 +15,7 @@ import { AccordionDirective } from './side-menu/side-menu-data/accordion.directi
 import { AccordionItemDirective } from './side-menu/side-menu-data/accordionItem.directive';
 import { AccordionAnchorDirective } from './side-menu/side-menu-data/accordionanchor.directive';
 import { FooterComponent } from './footer/footer.component';
+import { CustomizerComponent } from './customizer/customizer.component';
 
 
 
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     AccordionItemDirective,
     AccordionAnchorDirective,
     FooterComponent,
-    SideMenuDataComponent  ],
+    SideMenuDataComponent,
+    CustomizerComponent  ],
   imports: [
    SharedModule
   ]

@@ -10,7 +10,6 @@ export class AppLayoutHeaderComponent implements OnInit {
   @Input() showToggle = true;
 
   @Output() toggleSidenav = new EventEmitter<void>();
-  @Output() toggleSidenavNotice = new EventEmitter<void>();
 
   constructor() { }
 

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { LocalStorageService } from 'src/app/shared';
+import { AppSettings, defaults } from '../settings';
 
 export const USER_KEY = 'usr';
 
@@ -16,7 +17,7 @@ export interface User {
 })
 export class SettingsService {
   constructor(private store: LocalStorageService) {}
-
+  private options = defaults;
 
   get notify(): Observable<any> {
     return this.notify$.asObservable();
@@ -28,7 +29,9 @@ export class SettingsService {
     this.notify$.next({ type, value } as any);
   }
 
-
+  getOptions(): AppSettings {
+    return this.options;
+  }
 
   /** User information */
 
