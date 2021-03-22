@@ -17,6 +17,7 @@ export class AdminLayoutComponent implements OnInit {
   sidenavCollapsed = false;
   private isContentWidthFixed = true;
   sidenavOpened= true ;
+  options = this.settings.getOptions();
 
   get isOver(): boolean {
     return this.isMobileScreen;
@@ -43,7 +44,7 @@ export class AdminLayoutComponent implements OnInit {
 
   }
   sidenavOpenedChange(isOpened: boolean) {
-    //console.log(isOpened);
+    console.log(isOpened);
     this.isCollapsedWidthFixed = !this.isOver;
     this.sidenavOpened = isOpened;
     this.settings.setNavState('opened', isOpened);
