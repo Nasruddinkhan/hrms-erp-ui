@@ -14,7 +14,7 @@
 
     &.open {
       > .matero-sidemenu {
-        max-height: 2000px;
+        max-height:inherit;
       }
 
       > .matero-sidemenu-toggle > .menu-caret {

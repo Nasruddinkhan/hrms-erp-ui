@@ -48,19 +48,11 @@
   color: rgba(0, 0, 0, 0.87);
 }
 
-.matero-sidenav {
+.sidenav {
   position: absolute;
-  overflow-x: hidden;
-  transition: swift-ease-out(width); // Only set width property
-  height: 1000px;
-  @include mat-elevation(2);
-
-  &.mat-drawer-side {
-    border-width: 0;
-  }
+ 
 }
 
 .demo-sidenav-content {
-  padding: 15px;
   min-height:100%;
 }

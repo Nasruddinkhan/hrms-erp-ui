@@ -4,11 +4,12 @@
   (toggleSidenav)="sidenav.toggle()">
 
   </app-app-layout-header>
-  <mat-sidenav-container autosize autoFocus>
+  <mat-sidenav-container style="height: calc(100vh - 100%);
+  min-height: calc(100vh - 100px);">
 
 
     
-      <mat-sidenav class="matero-sidenav"  [mode]="isOver ? 'over' : 'side'"
+      <mat-sidenav class="sidenav"  [mode]="isOver ? 'over' : 'side'"
          #sidenav   
          [opened]="options.navPos === 'side' && options.sidenavOpened && !isOver"
           (openedChange)="sidenavOpenedChange($event)"   (closedStart)="sidenavCloseStart()">
@@ -16,7 +17,7 @@
         </app-side-menu>
       </mat-sidenav>
     <!--   style="height: 600px;" -->
-      <mat-sidenav-content #content class="admin-layout-container">
+      <mat-sidenav-content  #content class="admin-layout-container">
 
       <app-top-menu *ngIf="options.navPos === 'top'"></app-top-menu>
       <div class="demo-sidenav-content">
