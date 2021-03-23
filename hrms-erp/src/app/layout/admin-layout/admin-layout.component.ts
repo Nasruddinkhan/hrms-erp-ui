@@ -25,7 +25,7 @@ export class AdminLayoutComponent implements OnInit {
   
   sidenavCloseStart() {
     console.log('zczxccxz')
-    this.isContentWidthFixed = false;
+    this.sidenavCollapsed = true;
   }
   private isMobileScreen = false;
   constructor( private settings: SettingsService) {
@@ -51,14 +51,14 @@ export class AdminLayoutComponent implements OnInit {
     this.isCollapsedWidthFixed = !this.isOver;
     this.resetCollapsedState();
   }
-  toggleCollapsed() {
-   this.sidenavCollapsed = !this.sidenavCollapsed;
-    this.resetCollapsedState();
-  }
+
   resetCollapsedState(timer = 400) {
     // TODO: Trigger when transition end
     setTimeout(() => {
       this.settings.setNavState('collapsed', this.sidenavCollapsed);
     }, timer);
   }
+
+
+
 }
