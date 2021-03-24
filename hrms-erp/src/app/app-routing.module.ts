@@ -37,6 +37,10 @@ const routes: Routes = [
         path: 'my-team',
         loadChildren: () => import('./views/my-team/my-team.module').then(m => m.MyTeamModule)
       },
+      {
+        path: 'finance',
+        loadChildren: () => import('./views/my-finances/my-finance.module').then(m => m.MyFinanceModule)
+      },
       
     ],
   },
